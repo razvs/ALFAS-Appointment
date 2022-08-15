@@ -1,0 +1,491 @@
+body{
+	margin: 0;
+    padding: 0;
+    text-align: center;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	 
+}
+
+hr{
+border-top: 1px solid #a4a1a1 !important;
+margin-top: 0 !important;	
+}
+
+.container.bg{
+	background-color:#F2F2F2;
+	width: 800px !important;	
+}
+
+/* Show selected element */
+.active{
+	color:#5fdba7 !important;
+}
+
+/* Show selected element end*/
+
+/*Month*/
+
+#selected_month{
+	margin:5px;
+}
+
+.row.month{
+	margin-top: 30px;
+	background-color:#fff !important;	
+}
+
+.container-month {
+	margin: 0 auto;
+	margin-bottom:10px;
+	overflow: hidden;
+}
+
+nav#container-month {
+    position:relative;
+    width:100%;
+}
+#btn-nav-month-previous {
+	cursor: pointer;
+	float: left;
+	margin: 5px;
+    height: 0;
+    border-right: 28px solid #103252;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+	margin-top: 2%; 
+}
+#btn-nav-month-next {
+	cursor: pointer;
+	float: right;
+	margin: 5px;
+    height: 0;
+    border-left: 28px solid #103252;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+	margin-top: 2%; 
+}
+.inner-box-month
+{ 
+    width: 86%;
+    white-space: nowrap;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.data-month
+{  
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    display:block;
+    text-align: center;
+}
+.item-month
+{
+	padding: 2px 30px;
+	color:#000;
+	display: inline-block;
+	margin: 5px;
+	font-size: 16px;	
+	text-decoration: none;
+	text-align: center;
+	white-space: no-wrap;
+	background-color:#fff;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#cecece;	
+	cursor: pointer;
+}
+.item-month:hover {
+    background-color:#5fdba7;
+	color:#fff !important;		
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#5fdba7;	
+}
+
+@media only screen and (max-width: 480px) {
+  #btn-nav-month-previous {
+    display:none !important;
+  }
+  #btn-nav-month-next {
+    display:none !important;
+  }
+    .inner-box-month
+    { 
+        width:80%;
+        overflow-x:auto;
+		margin:0 auto;
+    }
+}
+/*Month end*/
+
+/*Time*/
+
+.container-time{
+	overflow: hidden;
+}
+
+
+nav#container-time {
+
+    position:relative;
+    width:100%;
+    height: 56px;
+}
+#btn-nav-time-previous {
+	cursor: pointer;
+	float: left;
+	margin-right: 10px;
+    height: 0;
+	border-right: 18.6px solid #103252;
+	border-top: 9.3px solid transparent;
+	border-bottom: 9.3px solid transparent;
+	margin-top: 2.4%;
+}
+#btn-nav-time-next {
+	cursor: pointer;
+	float: right;
+	margin-left: 10px;
+    height: 0;
+	border-left: 18.6px solid #103252;
+	border-top: 9.3px solid transparent;
+	border-bottom: 9.3px solid transparent;
+	margin-top: 2.4%; 
+}
+.inner-box-time
+{ 
+	margin-left: 20px;
+	margin-right: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.data-time
+{  
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+    display:block;
+    text-align: center;
+}
+.item-time
+{
+	height: 100%;
+	padding: 0px 19.2px;
+	color:#000;
+	display: inline;
+	margin: 0 auto;
+	line-height: 57px;
+	text-decoration: none;
+	text-align: center;
+	white-space: no-wrap;
+	background-color:#fff;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#cecece;	
+	cursor: pointer;
+}
+.item-time:hover {
+    background-color:#5fdba7;
+	color:#fff !important;	
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#5fdba7;	
+}
+
+@media only screen and (max-width: 480px) {
+  #btn-nav-time-previous {
+    display:none !important;
+  }
+  #btn-nav-time-next {
+    display:none !important;
+  }
+    .inner-box-time
+    { 
+		width: 80.4%;
+		overflow-x: auto;
+		margin: 0 auto;
+    }
+}
+/* Time end*/
+
+/* Services */
+
+.services{
+	padding:20px;
+	font-size: 15px;
+}
+
+.services p{
+	text-align:left;
+}
+
+.service p{
+	text-align:center;
+}
+
+.services img {
+	width: 100%;
+	height:100px;
+}
+
+.services .box{
+	width:20%;
+	cursor: pointer;
+}
+
+.services .service{
+	overflow: hidden;
+	background:#FFFFFF;
+	border: 1px solid #E7E9EE;
+	border-radius: 10px;
+	margin: 0 0 2rem;
+	box-sizing: border-box;	
+}
+
+.services .service:hover {
+    background-color:#5fdba7;
+	color:#fff !important;	
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#5fdba7;	
+}
+/* Services end*/
+
+/* People per booking */
+
+.ppb{
+	padding:20px;
+	font-size: 15px;
+}
+
+.ppb p{
+	text-align:left;
+}
+
+.ppb button {
+	float:left;
+	background-color:#fff;
+	border: 1px solid #e7e9ee;
+	border-radius:15px;
+	text-align: center;
+	font-size: 14px;
+	color:#49485c;
+	width: 65%;
+	height: 40px;
+}
+
+.ppb button:hover{
+    background-color:#5fdba7;
+	color:#fff !important;	
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#5fdba7;	
+}
+
+.ppb .box p{
+	font-size: 12px;
+	float:left;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+	margin-top: 10px;	
+}
+
+.ppb .box {
+	float: left;
+	width: 20%;
+}
+/* People per booking end*/
+
+/* Durations */
+
+#loadduration p{
+	color:red;
+	text-align:center;
+	font-size: 14px;
+}
+
+.durations{
+	padding:20px;
+	font-size: 15px;
+}
+
+.duration span{
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;
+	font-size: 14px;
+}
+
+.durations p{
+	text-align:left;
+}
+
+.durations .box{
+	width:12%;
+	cursor: pointer;
+	float:left;
+	margin-right: 12px;
+}
+.durations .duration:hover{
+    background-color:#5fdba7;
+	color:#fff !important;		
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#5fdba7;	
+}
+.durations .duration{
+	overflow: hidden;
+	color:#000;
+	background:#FFFFFF;
+	border: 1px solid #E7E9EE;
+	border-radius: 15px;
+	box-sizing: border-box;	
+}
+/* Durations end*/
+
+/* Therapists */
+
+#loadtherapists p{
+	color:red;
+	text-align:center;
+	font-size: 14px;
+}
+
+.therapists{
+	padding:20px;
+	font-size: 15px;
+}
+
+.therapists p{
+	text-align:left;
+}
+
+.therapists .box{
+	width:15%;
+	cursor: pointer;
+	float:left;
+	margin-right: 12px;
+}
+
+.therapists .therapist{
+	overflow: hidden;
+	color:#000;
+	background:#FFFFFF;
+	border: 1px solid #E7E9EE;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 10px;	
+}
+
+.therapists .therapist:hover{
+    background-color:#5fdba7;
+	color:#fff !important;		
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color:#5fdba7;	
+}
+
+.therapists .therapist img{
+	width: 75%;
+	margin: 10%;
+	border-radius: 50px;
+}
+.therapists .therapist span{
+	text-align:center;
+	font-size: 14px;
+}
+/* Therapists end*/
+
+/* Booking confirmation */
+
+.bookingconfirmation{
+	padding:20px;
+	font-size: 15px;
+	margin-bottom:50px;
+}
+
+.bookingconfirmation p{
+	text-align:left;
+}
+
+.bookingconfirmation .box{
+	margin:10px;
+}
+
+.bookingconfirmation textarea{
+	height: 100px !important;
+	resize: none;
+}
+
+.bookingconfirmation button{
+float: right;
+background-color:#fff;
+border: 1px solid #e7e9ee;
+text-align: center;
+font-size: 1.0rem;
+font-weight: 600;
+color: #49485c;
+display: block;
+margin-top: 10px;
+font-family: 'Quicksand', sans-serif;
+}
+
+.bookingconfirmation .box p{
+	text-align:center;
+	margin:10px;
+	color:#a94442;
+}
+/* Booking confirmation end*/
+
+@media screen and (max-width: 900px) {
+.container.bg{
+	width: auto !important;	
+}
+.services img {
+	height:auto !important;
+}
+.ppb .box {
+	float:unset;
+	width: auto;
+    margin: 0 auto;
+}
+.ppb button {
+	float:unset;
+}
+.ppb .box p {
+	float:unset;
+    text-align: center;	
+}
+
+.services .box {
+	width: 80%;
+	margin:0 auto;
+}
+.durations .box {
+    width: 65%;
+	margin:0 auto;
+	margin-top: 10px;
+	float:unset;
+}
+.therapists .box {
+	width: 60%;
+	margin:0 auto;
+	margin-top: 10px;
+	float:unset;
+}
+.therapists .therapist img {
+    margin: 5%;
+    border-radius: 50px;
+    height: 60%;
+}			
+}
